@@ -7,9 +7,11 @@
 //
 
 import Foundation
+import UIKit
 
 
-protocol UIViewControllerModelProtocol{
-//    class func modelType()->AnyClass;
+public protocol UIViewControllerModelProtocol:NSObjectProtocol{
+    func updateViews(data:NSObject);
+    func updateModel(view:UIView);
     var model:ModelProtocol?{get set}
 }

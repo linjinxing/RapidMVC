@@ -16,6 +16,7 @@
 		681C48811CCA821800BB8FD7 /* UIViewControllerModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681C48791CCA821800BB8FD7 /* UIViewControllerModelProtocol.swift */; };
 		681C48821CCA821800BB8FD7 /* ModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681C487B1CCA821800BB8FD7 /* ModelProtocol.swift */; };
 		681C48831CCA821800BB8FD7 /* RequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681C487C1CCA821800BB8FD7 /* RequestModel.swift */; };
+		681C488A1CCBEB4800BB8FD7 /* ProtocolExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681C48891CCBEB4800BB8FD7 /* ProtocolExample.swift */; };
 		B33E7D1945AAD08B985C4254 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20F0037FD92709C24DA17005 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		681C487B1CCA821800BB8FD7 /* ModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelProtocol.swift; sourceTree = "<group>"; };
 		681C487C1CCA821800BB8FD7 /* RequestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestModel.swift; sourceTree = "<group>"; };
 		681C487F1CCA821800BB8FD7 /* RapidMVC-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RapidMVC-Bridging-Header.h"; sourceTree = "<group>"; };
+		681C48891CCBEB4800BB8FD7 /* ProtocolExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolExample.swift; sourceTree = "<group>"; };
 		83125084FB60925D79DDF224 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F15AAD7EFAE53B83293D5290 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -122,6 +124,7 @@
 			children = (
 				681C487B1CCA821800BB8FD7 /* ModelProtocol.swift */,
 				681C487C1CCA821800BB8FD7 /* RequestModel.swift */,
+				681C48891CCBEB4800BB8FD7 /* ProtocolExample.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 				681C48801CCA821800BB8FD7 /* Typealias.swift in Sources */,
 				681C48821CCA821800BB8FD7 /* ModelProtocol.swift in Sources */,
 				681C48811CCA821800BB8FD7 /* UIViewControllerModelProtocol.swift in Sources */,
+				681C488A1CCBEB4800BB8FD7 /* ProtocolExample.swift in Sources */,
 				681C48531CCA6AA300BB8FD7 /* AppDelegate.swift in Sources */,
 				681C48831CCA821800BB8FD7 /* RequestModel.swift in Sources */,
 			);
@@ -397,7 +401,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TX.RapidMVC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Foundation/RapidMVC-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "TXVendor/RapidMVC-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -413,7 +417,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TX.RapidMVC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Foundation/RapidMVC-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "TXVendor/RapidMVC-Bridging-Header.h";
 			};
 			name = Release;
 		};

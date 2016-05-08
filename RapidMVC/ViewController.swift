@@ -17,15 +17,29 @@ class ViewController: UIViewController, UIViewControllerModelProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        model = RequestModel<objModel>()
-        model?.load(nil)
-            .finish{
-                print("ViewController finish")
+        model?.get(nil).finish{
+            
             }
-            .error{ (error)->Void in
-                print("ViewController \(error)")
+            .error{(error) in
+                
         }
+//        model = RequestModel<objModel>()
+//        model?.load(nil)
+//            .finish{
+//                print("ViewController finish")
+//            }
+//            .error{ (error)->Void in
+//                print("ViewController \(error)")
+//        }
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    func updateViews(data:NSObject){
+        
+    }
+    
+    func updateModel(view:UIView){
+        
     }
 
     override func didReceiveMemoryWarning() {

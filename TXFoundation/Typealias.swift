@@ -9,5 +9,5 @@
 import Foundation
 
 
-typealias ClosureVoid = ()->Void
-typealias ClourseError = (error:NSError)->Void
+public typealias ClosureVoid = ()->Void
+public typealias ClourseError = (error:NSError)->Void

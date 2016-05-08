@@ -8,32 +8,23 @@
 
 import Foundation
 
-
-
-
-struct RequestModel<T>:ModelProtocol {
-    var data:T?
+struct RequestModel<T:NSObject>:ModelProtocol {
+    typealias T = Element
     var param:[String:AnyObject]?
-//    func load(param:[String:AnyObject], didFinish:ClosureVoid?, didFailed:ClourseError?){
-//        
-//    }
-//    func loadNext(param:[String:AnyObject]=[:], didFinish:ClosureVoid?, didFailed:ClourseError?){
-//        
-//    }
-    func load(param:[String:AnyObject]?)->ModelProtocol{
+    func get(param:[String:AnyObject]?)->RequestModel{
         print("load")
         return self
     }
 
-    func finish(didFinish:ClosureVoid?)->ModelProtocol{
+    func finish(didFinish:ClosureVoid?)->RequestModel{
         print("finish")
         return self
     }
-    func error(didFailed:ClourseError?)->ModelProtocol{
+    func error(didFailed:ClourseError?)->RequestModel{
         print("error")
         return self
     }
-    
+    var data:T?
     private var didFinish:ClosureVoid?
     private var didFailed:ClourseError?
 }

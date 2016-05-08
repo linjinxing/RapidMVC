@@ -8,27 +8,13 @@
 
 import Foundation
 
-//
-//
-//protocol ModelDelegate{
-//    var didStartLoad:ClosureVoid?{}
-//    
-//    var didFinishLoad:ClosureVoid?
-//    
-//    var didFailLoadWithError:ClourseError?
-//    
-//    var didCancelLoad:ClosureVoid?
+public protocol ModelProtocol{
+    var data:Element?{get}
+    func get(param:[String:AnyObject]?)->Self
+    func finish(didFinish:ClosureVoid?)->Self
+    func error(didFailed:ClourseError?)->Self
+}
+
+//protocol ArrayModelProtocol:ModelProtocol{
+//    func loadNext(param:[String:AnyObject])->ModelProtocol
 //}
-
-protocol ModelProtocol{
-//    func load(param:[String:AnyObject], didFinish:ClosureVoid?, didFailed:ClourseError?)->ModelProtocol
-//    func loadNext(param:[String:AnyObject], didFinish:ClosureVoid?, didFailed:ClourseError?)->ModelProtocol
-    func load(param:[String:AnyObject]?)->ModelProtocol
-    func finish(didFinish:ClosureVoid?)->ModelProtocol
-    func error(didFailed:ClourseError?)->ModelProtocol
-//    func loadSignal(param:[String:AnyObject]?)->RACSignal
-}
-
-protocol ArrayModelProtocol:ModelProtocol{
-    func loadNext(param:[String:AnyObject])->ModelProtocol
-}
