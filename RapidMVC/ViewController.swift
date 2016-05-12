@@ -12,12 +12,17 @@ class objModel:NSObject{
     
 }
 
-class ViewController: UIViewController, UIViewControllerModelProtocol {
-    var model:ModelProtocol?
+class ViewController<U:NSObject>: UIViewController, UIViewControllerModelProtocol {
+    var model:RequestModel<U>?
+    
+//    func initModel<T:NSObject where T == U>(type:T) {
+//        model = RequestModel<T>()
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        model?.get(nil).finish{
+        model?.get()
+            .finish{
             
             }
             .error{(error) in
@@ -34,7 +39,7 @@ class ViewController: UIViewController, UIViewControllerModelProtocol {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    func updateViews(data:NSObject){
+    func updateViews(data:AnyObject){
         
     }
     

@@ -11,7 +11,7 @@ import UIKit
 
 
 public protocol UIViewControllerModelProtocol:NSObjectProtocol{
-    func updateViews(data:NSObject);
-    func updateModel(view:UIView);
-    var model:ModelProtocol?{get set}
+    func updateViews(data:AnyObject)
+    func updateModel(view:UIView)
+//    var model:ModelProtocol?{get set}
 }

@@ -9,9 +9,9 @@
 import Foundation
 
 struct RequestModel<T:NSObject>:ModelProtocol {
-    typealias T = Element
+    typealias Element = T
     var param:[String:AnyObject]?
-    func get(param:[String:AnyObject]?)->RequestModel{
+    func get(param:[String:AnyObject]? = nil)->RequestModel{
         print("load")
         return self
     }

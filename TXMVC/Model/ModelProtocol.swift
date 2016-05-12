@@ -9,7 +9,8 @@
 import Foundation
 
 public protocol ModelProtocol{
-    var data:Element?{get}
+    associatedtype ELement:NSObject
+    var data:ELement?{get}
     func get(param:[String:AnyObject]?)->Self
     func finish(didFinish:ClosureVoid?)->Self
     func error(didFailed:ClourseError?)->Self

@@ -17,6 +17,7 @@
 		681C48821CCA821800BB8FD7 /* ModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681C487B1CCA821800BB8FD7 /* ModelProtocol.swift */; };
 		681C48831CCA821800BB8FD7 /* RequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681C487C1CCA821800BB8FD7 /* RequestModel.swift */; };
 		681C488A1CCBEB4800BB8FD7 /* ProtocolExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681C48891CCBEB4800BB8FD7 /* ProtocolExample.swift */; };
+		6828272A1CE149BB00890061 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682827291CE149BB00890061 /* MyViewController.swift */; };
 		B33E7D1945AAD08B985C4254 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20F0037FD92709C24DA17005 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		681C487C1CCA821800BB8FD7 /* RequestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestModel.swift; sourceTree = "<group>"; };
 		681C487F1CCA821800BB8FD7 /* RapidMVC-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RapidMVC-Bridging-Header.h"; sourceTree = "<group>"; };
 		681C48891CCBEB4800BB8FD7 /* ProtocolExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolExample.swift; sourceTree = "<group>"; };
+		682827291CE149BB00890061 /* MyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 		83125084FB60925D79DDF224 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F15AAD7EFAE53B83293D5290 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,6 +64,7 @@
 		681C48461CCA6AA300BB8FD7 = {
 			isa = PBXGroup;
 			children = (
+				682827351CE4C38D00890061 /* TXUI */,
 				681C48751CCA821800BB8FD7 /* TXFoundation */,
 				681C48771CCA821800BB8FD7 /* TXMVC */,
 				681C487E1CCA821800BB8FD7 /* TXVendor */,
@@ -85,6 +88,7 @@
 			children = (
 				681C48521CCA6AA300BB8FD7 /* AppDelegate.swift */,
 				681C48541CCA6AA300BB8FD7 /* ViewController.swift */,
+				682827291CE149BB00890061 /* MyViewController.swift */,
 				681C48561CCA6AA300BB8FD7 /* Main.storyboard */,
 				681C48591CCA6AA300BB8FD7 /* Assets.xcassets */,
 				681C485B1CCA6AA300BB8FD7 /* LaunchScreen.storyboard */,
@@ -142,6 +146,13 @@
 				681C487F1CCA821800BB8FD7 /* RapidMVC-Bridging-Header.h */,
 			);
 			path = TXVendor;
+			sourceTree = "<group>";
+		};
+		682827351CE4C38D00890061 /* TXUI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TXUI;
 			sourceTree = "<group>";
 		};
 		D65007F15AA7C8C256091315 /* Pods */ = {
@@ -281,6 +292,7 @@
 				681C48811CCA821800BB8FD7 /* UIViewControllerModelProtocol.swift in Sources */,
 				681C488A1CCBEB4800BB8FD7 /* ProtocolExample.swift in Sources */,
 				681C48531CCA6AA300BB8FD7 /* AppDelegate.swift in Sources */,
+				6828272A1CE149BB00890061 /* MyViewController.swift in Sources */,
 				681C48831CCA821800BB8FD7 /* RequestModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

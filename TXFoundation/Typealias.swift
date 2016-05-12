@@ -11,3 +11,6 @@ import Foundation
 
 public typealias ClosureVoid = ()->Void
 public typealias ClourseError = (error:NSError)->Void
+
+
+
